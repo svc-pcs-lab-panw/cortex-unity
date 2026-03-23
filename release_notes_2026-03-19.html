@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release Notes — March 19, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #111318;
+      color: #E8EAF0;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #E8EAF0;
+      font-weight: 600;
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #2A2F3A;
+      padding-bottom: 16px;
+    }
+    .intro {
+      color: #8B92A0;
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: #E8EAF0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background-color: #111318;
+    }
+    th {
+      background-color: #1A1D24;
+      color: #8B92A0;
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #2A2F3A;
+    }
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #2A2F3A;
+      vertical-align: top;
+    }
+    tr:hover td {
+      background-color: #252A36;
+    }
+    .version {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: #C9CDD4;
+      font-weight: 500;
+    }
+    .date {
+      color: #8B92A0;
+      font-size: 0.9rem;
+    }
+    .category {
+      font-weight: 500;
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .category-feature {
+      background-color: rgba(52, 211, 153, 0.15);
+      color: #34D399;
+    }
+    .category-bugfix {
+      background-color: rgba(248, 113, 113, 0.15);
+      color: #F87171;
+    }
+    .category-improvement {
+      background-color: rgba(96, 165, 250, 0.15);
+      color: #60A5FA;
+    }
+    .name {
+      color: #E8EAF0;
+      font-weight: 500;
+    }
+    .description {
+      color: #8B92A0;
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #2A2F3A;
+      color: #5A6070;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Release Notes — March 19, 2026</h1>
+  <p class="intro">Review the release notes below to learn about new features, bug fixes, and improvements.</p>
+  
+  <h2>Changes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-feature">Feature</span></td>
+        <td class="name">BigQuery Data Upload for Trend Analysis</td>
+        <td class="description">Assessment results and insights data are now automatically uploaded to BigQuery to enable long-term trend analysis. A CSV of the results is also included in the downloadable report.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-feature">Feature</span></td>
+        <td class="name">Optional File Uploads and Requestor Validation</td>
+        <td class="description">File uploads for assessments are now optional, and the requestor&#x27;s email address is validated to ensure it belongs to the correct organization.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-feature">Feature</span></td>
+        <td class="name">Dark Theme for HTML Reports</td>
+        <td class="description">HTML reports now feature an XSIAM-style dark theme for improved readability and a better user experience.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-feature">Feature</span></td>
+        <td class="name">Resilient LLM API Calls</td>
+        <td class="description">Implemented retry logic with exponential backoff for Large Language Model (LLM) API calls to better handle transient network or API issues.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-feature">Feature</span></td>
+        <td class="name">Flexible BigQuery API Endpoint Support</td>
+        <td class="description">The BigQuery uploader now supports a configurable list of multiple allowed API endpoints, enhancing deployment flexibility.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-bugfix">Bug Fix</span></td>
+        <td class="name">BigQuery Schema and Data Integrity</td>
+        <td class="description">Addressed several data type and schema issues for BigQuery uploads. An explicit schema now prevents type inference errors, `NULL` is used for empty values instead of &quot;N/A&quot;, and numeric fields are correctly typed as `FLOAT`.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-bugfix">Bug Fix</span></td>
+        <td class="name">BigQuery Project ID Parsing</td>
+        <td class="description">Corrected an issue where the uploader was parsing `proj_id` instead of the correct `project_id` from the manifest file.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-bugfix">Bug Fix</span></td>
+        <td class="name">Manifest Status Normalization</td>
+        <td class="description">The manifest generator is now more flexible in parsing status values and consistently normalizes them to either `PASS` or `FAIL`.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-bugfix">Bug Fix</span></td>
+        <td class="name">Cloud As-Built Service</td>
+        <td class="description">Resolved an issue with the Cloud As-Built service configuration and fixed a class name typo in the zip reporter.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-bugfix">Bug Fix</span></td>
+        <td class="name">Distribution List Configuration</td>
+        <td class="description">Corrected an error in the server settings for distribution lists within As-Built reports.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-improvement">Improvement</span></td>
+        <td class="name">Companion Service Resource Allocation</td>
+        <td class="description">Increased the memory limit for companion services to 12Gi to improve performance and stability, especially for large assessments.</td>
+      </tr>
+      <tr>
+        <td class="version">v0.3.8</td>
+        <td class="date">2026-03-19</td>
+        <td><span class="category category-improvement">Improvement</span></td>
+        <td class="name">Codebase Refactoring</td>
+        <td class="description">Performed a significant code refactor to simplify service logic, remove redundant data processing, and centralize configuration management for improved maintainability.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <footer>Generated by Relish</footer>
+  </div>
+</body>
+</html>
