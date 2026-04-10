@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Release Notes — April 07, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #111318;
+      color: #E8EAF0;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #E8EAF0;
+      font-weight: 600;
+      font-size: 1.75rem;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #2A2F3A;
+      padding-bottom: 16px;
+    }
+    .intro {
+      color: #8B92A0;
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: #E8EAF0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background-color: #111318;
+    }
+    th {
+      background-color: #1A1D24;
+      color: #8B92A0;
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #2A2F3A;
+    }
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid #2A2F3A;
+      vertical-align: top;
+    }
+    tr:hover td {
+      background-color: #252A36;
+    }
+    .version {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: #C9CDD4;
+      font-weight: 500;
+    }
+    .date {
+      color: #8B92A0;
+      font-size: 0.9rem;
+    }
+    .category {
+      font-weight: 500;
+      font-size: 0.85rem;
+      padding: 4px 10px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .category-feature {
+      background-color: rgba(52, 211, 153, 0.15);
+      color: #34D399;
+    }
+    .category-bugfix {
+      background-color: rgba(248, 113, 113, 0.15);
+      color: #F87171;
+    }
+    .category-improvement {
+      background-color: rgba(96, 165, 250, 0.15);
+      color: #60A5FA;
+    }
+    .category-whatsnew {
+      background-color: rgba(167, 139, 250, 0.15);
+      color: #A78BFA;
+    }
+    .category-technical {
+      background-color: rgba(148, 163, 184, 0.15);
+      color: #94A3B8;
+    }
+    .name {
+      color: #E8EAF0;
+      font-weight: 500;
+    }
+    .description {
+      color: #8B92A0;
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #2A2F3A;
+      color: #5A6070;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Release Notes — April 07, 2026</h1>
+  <p class="intro">Review the release notes below to learn about new features, bug fixes, and improvements.</p>
+  
+  <h2>Changes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Release ID</th>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-whatsnew">What&#x27;s New</span></td>
+        <td class="name">Unity Cloud Platform Workflow</td>
+        <td class="description">A new workflow has been added to the Unity companion service to support cloud platform assessments, introducing new prompts and service definitions.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-whatsnew">What&#x27;s New</span></td>
+        <td class="name">Total Vulnerabilities in BigQuery Export</td>
+        <td class="description">The BigQuery CSV output now includes a new `cld_vln_repo_total` derived column, which provides a sum of total code vulnerabilities across all repositories for easier tracking.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-whatsnew">What&#x27;s New</span></td>
+        <td class="name">Automated Platform Detection in Unity</td>
+        <td class="description">The Unity service now automatically derives the platform from the `unity_platform` variable, removing the need for users to provide this input manually and simplifying the user experience.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-whatsnew">What&#x27;s New</span></td>
+        <td class="name">Manifest Field Requirements</td>
+        <td class="description">To improve data quality and ensure proper execution, the `requestorEmail` field is now required for the Unity service, and a `region` field is now required for the base manifest.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-whatsnew">What&#x27;s New</span></td>
+        <td class="name">Check and Badge Logic Updates</td>
+        <td class="description">Several runtime and AppSec checks have been updated to improve accuracy and filtering. For example, the `runtime_trusted_images_bronze` check is now correctly limited to the cloud platform, and `cas_repo_CI_bronze` now returns both a count and status.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-technical">Technical</span></td>
+        <td class="name">As-Built Report Content Expansion</td>
+        <td class="description">Significantly expanded the scope and detail of As-Built reports by adding and refining dozens of YAML definitions for posture, inventory, AppSec, data collection, and more. Report section ordering has also been updated for better clarity.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-technical">Technical</span></td>
+        <td class="name">CI/CD Pipeline Improvements</td>
+        <td class="description">Introduced a new script to build and push all companion services at once, with an option to target a single service. Build scripts have also been updated with corrected container registry paths for stage and production environments.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-technical">Technical</span></td>
+        <td class="name">Enhanced Debug Logging</td>
+        <td class="description">Removed truncation from API and query debug logs to provide full visibility during troubleshooting. Additionally, GCP authentication logs now include the service account email to simplify identity verification.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-technical">Technical</span></td>
+        <td class="name">GCP Authentication Refactor</td>
+        <td class="description">Centralized the logic for Google Cloud Application Default Credentials (ADC) identity resolution to simplify authentication flows. A fix was also implemented to force credential refreshes, resolving potential stale token issues.</td>
+      </tr>
+      <tr>
+        <td class="version">2026.4.1</td>
+        <td class="date">2026-04-07</td>
+        <td><span class="category category-technical">Technical</span></td>
+        <td class="name">Manifest Generation Utility</td>
+        <td class="description">The internal manifest generator now supports a key-value pivot, providing more flexibility for creating basic badge manifests from check data.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <footer>Generated by Relish</footer>
+  </div>
+</body>
+</html>
